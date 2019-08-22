@@ -1,0 +1,25 @@
+package lemonadeStand;
+
+import java.util.Scanner;
+
+public class lemonadeStand {
+	public static void main(String[] args) {
+		Scanner amountLemonades = new Scanner(System.in);
+		 System.out.println("How much Lemonade do you want?");
+
+		    String samountLemonade = amountLemonades.nextLine();
+		    System.out.println("You want " + samountLemonade + " Lemondes");
+		    
+		    double conversion = new Double(samountLemonade);
+		    double price = 2.50;
+		    double total = price * conversion;
+		    
+		    if (conversion < 0) {
+		    	System.out.println("you need more than zero silly");
+		    }else {
+		    	System.out.printf("Total is: $%,.2f%n", total);
+		    }
+
+	}
+
+}
